@@ -68,9 +68,9 @@ Requirements: Python 3.11+, Node.js 18+.
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate          # macOS/Linux: source .venv/bin/activate
+.venv\Scripts\activate          # According to operating system: source .venv/bin/activate
 pip install -r requirements.txt
-copy .env.example .env          # macOS/Linux: cp .env.example .env
+copy .env.example .env          # According to operating system: cp .env.example .env
 uvicorn app.main:app --reload
 ```
 
@@ -100,14 +100,14 @@ Google Gemini (free tier, key from https://aistudio.google.com/apikey):
 
 ```
 EXTRACTOR=gemini
-GEMINI_API_KEY=...
+GEMINI_API_KEY= 'enter your API key here'
 ```
 
 OpenAI:
 
 ```
 EXTRACTOR=openai
-OPENAI_API_KEY=sk-...
+OPENAI_API_KEY= 'enter your API key here'
 ```
 
 `.env` is git-ignored, so keys are never committed.
